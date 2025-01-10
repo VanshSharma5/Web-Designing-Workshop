@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Page</title>
+    <!-- <script src="validation.js" defer></script>  -->
+    <script src="validation1.js" defer></script> 
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form id="registrationForm">
+        <table cellspacing="20">
+            <tr>
+                <td>Name:</td>
+                <td>
+                    <input type="text" id="name" name="name">
+                </td>
+            </tr>
+            <tr>
+                <td>Password: </td> 
+                <td> 
+                    <input type="password" id="password" name="password">
+                    <br>
+                    <span id="passwordError" style="color: red;"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Email:  </td> 
+                <td> 
+                    <input type="text" name="email">
+                </td>
+            </tr>
+            <tr>
+                <td> Phone Number: </td> 
+                <td> 
+                    <input type="text" name="phone">
+                </td>
+            </tr>
+            <tr>
+                <td> Sex: </td> 
+                <td> 
+                    <input type="radio" name="sex" value="male"> Male
+                    <input type="radio" name="sex" value="female"> Female
+                </td>
+            </tr>
+            <tr>
+                <td>Date of Birth: </td> 
+                <td> 
+                    <select name="day"><option>Day</option></select>
+                    <select name="month"><option>Month</option></select>
+                    <select name="year"><option>Year</option></select>
+                </td>
+            </tr>
+            <tr>
+                <td> Languages Known: </td> 
+                <td> 
+                    <input type="checkbox" name="lang" value="English"> English
+                    <input type="checkbox" name="lang" value="Hindi"> Hindi
+                </td>
+            </tr>
+            <tr>
+                <td> Address: </td> 
+                <td> 
+                    <textarea name="address"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td> 
+                    <button type="submit">Submit</button>
+                </td>
+                <td> 
+                    <button type="reset">reset</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
